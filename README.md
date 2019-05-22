@@ -18,6 +18,7 @@
 司法考试|司法考试|51
 待补充......|......|......
 ### 三、接口
+由于参数中有中文，因此调用前接口地址需要进行URI编码
 #### 1、获取试卷列表
 https://www.gkzenti.cn/apipro/getexamlist?key={key}&cls={cls}&index={pageindex}
 
