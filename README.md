@@ -1,6 +1,6 @@
-## 公开真题库接口使用文档
+## 喔题库接口使用文档
 ### 一、说明
-[公开真题库接口](https://www.gkzenti.cn/apipro)的详细文档。
+[喔题库接口](https://www.wotiku.cn/apipro)的详细文档。
 ### 二、试卷范围
 试卷类型 | cls |  数量
 -|-|-
@@ -20,7 +20,7 @@
 ### 三、接口
 由于参数中有中文，因此调用前接口地址需要进行URI编码
 #### 1、获取试卷列表
-https://www.gkzenti.cn/apipro/getexamlist?key={key}&cls={cls}&index={pageindex}
+https://www.wotiku.cn/apipro/getexamlist?key={key}&cls={cls}&index={pageindex}
 
 key:授权码
 
@@ -29,7 +29,7 @@ cls:试卷类型，详见试卷范围部分
 index:页码，从1开始，一次返回100行，调用的时候可以做循环，当返回的数据数量少于100行的时候，即表示已到最后1页
 
 #### 2、获取具体一份试卷的内容&答案&解析
-https://www.gkzenti.cn/apipro/getexamdata?key={key}&examno={examno}&type={type}
+https://www.wotiku.cn/apipro/getexamdata?key={key}&examno={examno}&type={type}
 
 key:授权码
 
@@ -59,7 +59,7 @@ type：试卷的组成部分，详见下表
 我们以2019年国家公务员录用考试《行测》真题为例，
 
 （1）、调用大类：
-https://www.gkzenti.cn/apipro/getexamdata?key={key}&examno={examno}&type=P
+https://www.wotiku.cn/apipro/getexamdata?key={key}&examno={examno}&type=P
 
 返回结果：
 
@@ -115,7 +115,7 @@ https://www.gkzenti.cn/apipro/getexamdata?key={key}&examno={examno}&type=P
 ```
 
 （2）、调用试题：
-https://www.gkzenti.cn/apipro/getexamdata?key={key}&examno={examno}&type=C
+https://www.wotiku.cn/apipro/getexamdata?key={key}&examno={examno}&type=C
 
 返回结果：
 
@@ -258,7 +258,7 @@ https://www.gkzenti.cn/apipro/getexamdata?key={key}&examno={examno}&type=C
 	"hasVideo": 1
 }, {}]
 ```
-（3）、调用解析：https://www.gkzenti.cn/apipro/getexamdata?key={key}&examno={examno}&type=E
+（3）、调用解析：https://www.wotiku.cn/apipro/getexamdata?key={key}&examno={examno}&type=E
 
 返回结果：
 
@@ -337,7 +337,7 @@ https://www.gkzenti.cn/apipro/getexamdata?key={key}&examno={examno}&type=C
 ```
 #### 2、申论
 
-（1）、调用试题：https://www.gkzenti.cn/apipro/getexamdata?key={key}&examno={examno}&type=C
+（1）、调用试题：https://www.wotiku.cn/apipro/getexamdata?key={key}&examno={examno}&type=C
 
 返回结果：
 
